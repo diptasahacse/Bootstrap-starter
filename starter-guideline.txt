@@ -1,0 +1,25 @@
+#follow step-1 to step-8 from zero to liveServer
+#1>$ npm init
+#2>$ npm install bootstrap font-awesome jquery popper.js --save
+#3>$ npm install gulp gulp-sass browser-sync --save-dev
+
+#4>Now try to download fonts using-> $ gulp fonts 
+->if it is downloading then goto step 5
+->if it showing-> bash: gulp: command not found This problem then
+#Install gulp globally.
+$ npm install -g gulp
+
+#Install gulp locally in the project.
+$ npm install gulp
+
+#Add below line in your package.json in last with comma(,)
+"scripts": {
+      "gulp": "gulp"
+ }
+
+#4>then try again to download fonts using-> $ gulp fonts
+#5>$ gulp js
+#6>$ gulp scss
+#7>open your html file and write html5 markup and link necessary css and js like bootstrap.css,font-awesome.min.css,style.css,jquery.min.js,popper.min.js,bootstrap.min.js.
+#8>$ gulp liveServer
+
